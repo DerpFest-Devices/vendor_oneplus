@@ -1000,8 +1000,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.gpudrivers.msmnile.api30 \
     pasrservice \
     PowerOffAlarm \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
+    NxpNfcNci \
     QtiTelephonyService \
     WfdService \
     ims \
