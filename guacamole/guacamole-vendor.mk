@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msmnile.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
+    vendor/oneplus/guacamole/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/hw/goodix.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.msmnile.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
     vendor/oneplus/guacamole/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
