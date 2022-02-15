@@ -171,9 +171,36 @@ dex_import {
 }
 
 dex_import {
-	name: "qti-telephony-common",
+	name: "tcmclient",
 	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	jars: ["proprietary/system/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
 	system_ext_specific: true,
 }
 
@@ -221,4 +248,3 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
-
