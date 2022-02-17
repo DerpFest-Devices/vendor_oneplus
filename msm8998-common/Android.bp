@@ -6,6 +6,26 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdsi_netctrl",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "liblbs_core",
 	owner: "oneplus",
 	strip: {
@@ -207,7 +227,7 @@ android_app_import {
 	name: "CACertService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -281,9 +301,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "embms",
+	name: "imssettings",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/app/embms/embms.apk",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -292,9 +312,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
+	name: "uceShimService",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -336,6 +356,12 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.param-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
 }
 
 prebuilt_etc_xml {
