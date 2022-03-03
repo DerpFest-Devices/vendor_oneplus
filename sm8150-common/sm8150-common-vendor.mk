@@ -1026,12 +1026,12 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     QtiTelephonyService \
     WfdService \
+    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    tcmclient \
     WfdCommon \
     qcnvitems \
-    qti-telephony-common \
-    tcmclient \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
