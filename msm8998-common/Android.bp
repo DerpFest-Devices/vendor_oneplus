@@ -26,46 +26,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liblbs_core",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liblbs_core.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblbs_core.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_api_v02",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqmi_cci",
 	owner: "oneplus",
 	strip: {
@@ -182,26 +142,6 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
-}
-
 android_app_import {
 	name: "SoterService",
 	owner: "oneplus",
@@ -270,12 +210,12 @@ android_app_import {
 android_app_import {
 	name: "PowerOffAlarm",
 	owner: "oneplus",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -354,13 +294,6 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.alarm-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
 	owner: "oneplus",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
@@ -393,6 +326,15 @@ dex_import {
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.gnss@2.0-service-qti",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
 }
 
 prebuilt_etc_xml {
