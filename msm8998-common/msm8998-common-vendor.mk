@@ -437,7 +437,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libopcamera_native_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopcamera_native_modules.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libopposfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopposfr.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn553_fw.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
