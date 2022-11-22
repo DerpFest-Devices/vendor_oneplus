@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/cheeseburger
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8998.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -65,4 +63,5 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx350.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx350_gt24c64ass_eeprom.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx398.so
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx398.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so
