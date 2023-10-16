@@ -1049,5 +1049,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
     vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.factory-V2.0-java \
     vendor.qti.hardware.data.iwlan-V1.0-java \
     vendor.qti.hardware.data.iwlan-V1.1-java
