@@ -763,9 +763,9 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    SoterService \
     PowerOffAlarm \
     QtiTelephonyService \
+    SoterService \
     imssettings \
     uceShimService \
     IFAAService \
