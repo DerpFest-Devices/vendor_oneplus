@@ -83,6 +83,7 @@ android_app_import {
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -164,6 +165,7 @@ android_app_import {
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
