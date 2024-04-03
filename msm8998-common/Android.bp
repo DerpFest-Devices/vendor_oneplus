@@ -8,26 +8,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdsi_netctrl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqmi_cci",
 	owner: "oneplus",
 	strip: {
@@ -59,26 +39,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqsocket",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqsocket.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqsocket.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -222,28 +182,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "IFAAService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
@@ -309,13 +247,6 @@ dex_import {
 	name: "qcrilhook",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
 }
 
